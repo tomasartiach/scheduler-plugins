@@ -1,0 +1,17 @@
+apiVersion: kubescheduler.config.k8s.io/v1
+kind: KubeSchedulerConfiguration
+clientConnection:
+  kubeconfig: /etc/kubernetes/scheduler.conf
+profiles:
+  - schedulerName: default-scheduler
+    plugins:
+      score:
+        enabled:
+        # default plugins are enabled by default, we add our plugin
+        - name: GreenScheduler
+          weight: 2
+    pluginConfig:
+    - name: GreenScheduler
+      args:
+        TimeRangeInMinutes: 3
+        Address: "promAddress"

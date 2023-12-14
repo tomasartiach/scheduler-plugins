@@ -12,6 +12,8 @@ require (
 	github.com/k8stopologyawareschedwg/podfingerprint v0.2.2
 	github.com/patrickmn/go-cache v2.1.0+incompatible
 	github.com/paypal/load-watcher v0.2.3
+	github.com/prometheus/client_golang v1.16.0
+	github.com/prometheus/common v0.44.0
 	github.com/spf13/pflag v1.0.5
 	github.com/stretchr/testify v1.8.4
 	gonum.org/v1/gonum v0.12.0
@@ -22,6 +24,7 @@ require (
 	k8s.io/code-generator v0.28.4
 	k8s.io/component-base v0.28.4
 	k8s.io/component-helpers v0.28.4
+	k8s.io/klog v1.0.0
 	k8s.io/klog/hack/tools v0.0.0-20210917071902-331d2323a192
 	k8s.io/klog/v2 v2.100.1
 	k8s.io/kube-scheduler v0.28.4
@@ -81,9 +84,7 @@ require (
 	github.com/opencontainers/selinux v1.10.0 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
-	github.com/prometheus/client_golang v1.16.0 // indirect
 	github.com/prometheus/client_model v0.4.0 // indirect
-	github.com/prometheus/common v0.44.0 // indirect
 	github.com/prometheus/procfs v0.10.1 // indirect
 	github.com/sirupsen/logrus v1.9.0 // indirect
 	github.com/spf13/cobra v1.7.0 // indirect

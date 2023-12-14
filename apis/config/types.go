@@ -240,3 +240,12 @@ type NetworkOverheadArgs struct {
 	// The NetworkTopology CRD name
 	NetworkTopologyName string
 }
+
+type GreenScoreArgs struct {
+	metav1.TypeMeta
+
+	// Address of the Prometheus Server
+	Address string
+	// TimeRangeInMinutes used to aggregate the network metrics
+	TimeRangeInMinutes int64
+}

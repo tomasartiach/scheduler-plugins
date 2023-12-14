@@ -238,3 +238,13 @@ type NetworkOverheadArgs struct {
 	// The NetworkTopology CRD name
 	NetworkTopologyName *string `json:"networkTopologyName,omitempty"`
 }
+
+// NetworkTrafficArgs holds arguments used to configure NetworkTraffic plugin.
+type GreenScoreArgs struct {
+	metav1.TypeMeta `json:",inline"`
+
+	// Address of the Prometheus Server
+	Address *string `json:"prometheusAddress,omitempty"`
+	// TimeRangeInMinutes used to aggregate the network metrics
+	TimeRangeInMinutes *int64 `json:"timeRangeInMinutes,omitempty"`
+}
